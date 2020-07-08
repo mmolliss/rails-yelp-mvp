@@ -1,0 +1,13 @@
+<div class="card">
+  <ul>
+    <% @restaurants.each do |restaurant| %>
+      <li><%= restaurant.name %></li>
+      <li><%= restaurant.rating %></li>
+      <li><%= restaurant.category %></li>
+      <li><%= restaurant.phone_number %></li>
+      <li><%= restaurant.address %></li>
+    <% end %>
+  </ul>
+
+<%= link_to "+Add restaurant", "/restaurants/new" %>
+</div>
