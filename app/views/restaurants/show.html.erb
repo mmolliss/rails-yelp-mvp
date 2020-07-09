@@ -1,0 +1,16 @@
+<div class="show-card w-50 p-3">
+  <h1><%= @restaurant.name %></h1>
+
+  <h3><%= @restaurant.category %></h3>
+
+  <p><%= @restaurant.address %></p>
+  <p><%= @restaurant.phone_number %></p>
+
+  <h3>Reviews</h3>
+  <p><%= @restaurant.reviews %></p>
+</div>
+
+<div class="add-edit-btn">
+  <%= link_to "Add a review", '/restaurants/:restaurant_id/reviews/new', class: "btn btn-primary"%>
+  <%= link_to "Edit restaurant", '/restaurants/:id/edit', class: "btn btn-primary"%>
+</div>

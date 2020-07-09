@@ -1,13 +1,12 @@
-<div class="card">
-  <ul>
-    <% @restaurants.each do |restaurant| %>
-      <li><%= restaurant.name %></li>
-      <li><%= restaurant.rating %></li>
-      <li><%= restaurant.category %></li>
-      <li><%= restaurant.phone_number %></li>
-      <li><%= restaurant.address %></li>
-    <% end %>
-  </ul>
-
-<%= link_to "+Add restaurant", "/restaurants/new" %>
+<div class="flex-container">
+  <% @restaurants.each do |restaurant| %>
+    <div class="card">
+      <h5><%= restaurant.name %></h5>
+      <p><%= restaurant.category %></p>
+      <p><%= restaurant.phone_number %></p>
+      <p><%= restaurant.address %></p>
+      <%= link_to "Show restaurant", restaurant, class: "btn btn-primary"%>
+    </div>
+  <% end %>
 </div>
+<%= link_to "+Add restaurant", "/restaurants/new", class: "btn btn-primary ml-5"%>

@@ -1,0 +1,9 @@
+<h1>Add a new review</h1>
+
+<div class="add-form w-50 p-3">
+  <%= simple_form_for @review do |f| %>
+    <%= f.input :content %>
+    <%= f.input :rating %>
+    <%= f.submit %>
+  <% end %>
+</div>

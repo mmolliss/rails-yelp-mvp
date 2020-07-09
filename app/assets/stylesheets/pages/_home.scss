@@ -1,1 +1,32 @@
 // Specific CSS for your home-page
+
+.flex-container {
+  // display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: row;
+  // justify-content: center;
+  margin: 30px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card {
+  list-style: none;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 20px 20px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.show-card {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  margin: 30px 30px;
+}
+
+.add-edit-btn {
+  margin-left: 30px;
+}
